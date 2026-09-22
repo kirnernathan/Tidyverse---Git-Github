@@ -21,8 +21,6 @@ library(tidyverse)
 college_data <- read_csv("../Data_413/homework_2/collegedata.csv")
 ```
 
-## Instructions
-
 ```{r}
 #Question 2
 nrow(college_data)
@@ -43,6 +41,8 @@ college_data %>%
   labs(x="SAT Average", y="Admission Rate")+
   geom_point(color="blue")
 ```
+
+## Instructions
 
 Complete the following exercises **using only the tidyverse packages** (e.g., `dplyr`, `tidyr`, `ggplot2`, `readr`, `stringr`, `forcats`, `lubridate`, `purrr`, etc.)
 
