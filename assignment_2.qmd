@@ -29,6 +29,12 @@ nrow(college_data)
 ncol(college_data)
 ```
 
+```{r}
+#Question 3
+college_data %>%
+  select(INSTNM, SAT_AVG, ADM_RATE)
+```
+
 Complete the following exercises **using only the tidyverse packages** (e.g., `dplyr`, `tidyr`, `ggplot2`, `readr`, `stringr`, `forcats`, `lubridate`, `purrr`, etc.)
 
 **Important:** This assignment is intended to assess your proficiency with the **tidyverse**. Solutions that use **base R** or **packages outside the tidyverse** to solve the problems will **not receive credit** unless explicitly permitted in the question.
@@ -54,6 +60,8 @@ college_data <- read_csv("../data/collegedata.csv")
   - I printed the number of rows and columns inside of the data set using nrow and ncol
 
 - Task 3: Use tidyverse to select INSTNM, SAT_AVG, and ADM_RATE
+
+  - Use a pipe and the select function to select the three categories
 
 - Task 4: Create a scatterplot for SAT_AVG and ADM_RATE (Remove NA)
 
