@@ -35,6 +35,15 @@ college_data %>%
   select(INSTNM, SAT_AVG, ADM_RATE)
 ```
 
+```{r}
+#Question 4
+drop_na(college_data)
+college_data %>%
+  ggplot(aes(x=SAT_AVG, y=ADM_RATE))+
+  labs(x="SAT Average", y="Admission Rate")+
+  geom_point(color="blue")
+```
+
 Complete the following exercises **using only the tidyverse packages** (e.g., `dplyr`, `tidyr`, `ggplot2`, `readr`, `stringr`, `forcats`, `lubridate`, `purrr`, etc.)
 
 **Important:** This assignment is intended to assess your proficiency with the **tidyverse**. Solutions that use **base R** or **packages outside the tidyverse** to solve the problems will **not receive credit** unless explicitly permitted in the question.
@@ -63,7 +72,9 @@ college_data <- read_csv("../data/collegedata.csv")
 
   - Use a pipe and the select function to select the three categories
 
-- Task 4: Create a scatterplot for SAT_AVG and ADM_RATE (Remove NA)
+- Task 4: Create a scatter plot for SAT_AVG and ADM_RATE (Remove NA)
+
+  - Used ggplot to create a scatter plot of the two data points and removed NA
 
 ## Submission
 
