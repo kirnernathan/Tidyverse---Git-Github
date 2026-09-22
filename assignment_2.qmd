@@ -51,7 +51,7 @@ college_data <- read_csv("../data/collegedata.csv")
 
 - Task 2:Determine rows and columns
 
-  - I printed the number of rows and columns inside of the data set
+  - I printed the number of rows and columns inside of the data set using nrow and ncol
 
 - Task 3: Use tidyverse to select INSTNM, SAT_AVG, and ADM_RATE
 
