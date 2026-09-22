@@ -1,5 +1,5 @@
 ---
-title: "Assignment 2x"
+title: "Assignment 2"
 format:
   html:
     embed-resources: true
@@ -18,8 +18,7 @@ ggplot2::theme_set(ggplot2::theme_bw())
 ```{r}
 library(tidyverse)
 #Question 1
-setwd("/Users/nathankirner/Documents")
-college_data <- read_csv("Data_413/homework_2/collegedata.csv")
+college_data <- read_csv("../Data_413/homework_2/collegedata.csv")
 ```
 
 ## Instructions
